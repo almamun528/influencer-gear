@@ -44,6 +44,7 @@
     --dark-blue: rgb(10, 8, 38);
     --button-color: rgb(224, 44, 109);
     --orange-color:rgba(251, 130, 0, 1);
+    --white-color:#ffffff;
 }
 
 
@@ -55,7 +56,8 @@
     box-sizing: border-box;
     list-style: none;
 }
-body{
+
+.box{
     width: 90%;
     margin: 0 auto;
 }
@@ -122,7 +124,7 @@ a{
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 80px;
 }
 .left-content{
     /* left side of hero content  */
@@ -155,7 +157,7 @@ a{
     border-radius: 24px;
     border: none;
     outline: none;
-    color:white;
+    color:var(--white-color);
     cursor: pointer;
     transition: background-color 1.50s, box-shadow 1.50s; 
 }
@@ -170,7 +172,7 @@ a{
 
 
 
-/* Cards Section starts here */
+/* Cards Section starts here // html code 43 to 55 */
 .brands{
     margin: 0 auto;
     margin-top: 20px;
@@ -192,8 +194,65 @@ a{
 
 /* Cards Section starts ENDS */
 
+/* Featured products at one place Section Starts Here */
 
+.featured{
+    align-self: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.leftImage{
+    width: fit-content;
+}
 
+.rightContent{
+    width: 610px;
+    margin-left: -200px;
+}
+.rightContent P{
+    margin: 20px 0;
+    line-height: 1.4rem;
+}
+.btn2{
+    /* Hero Section Button  */
+    background-color: var(--button-color);
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    color:var(--white-color);
+    cursor: pointer;
+    transition: background-color 1.50s, box-shadow 1.50s; 
+}
+.btnicon{
+    margin-left: 10px;
+}
+.btn2:hover{
+    background-color:rgb(252, 1, 93);
+   box-shadow: 20px 10px 40px -3px grey;
+}
+
+/* Footer starts Here  */
+footer{
+    width: 100%;
+    background-color: var(--dark-blue);
+    color: var(--white-color);
+    padding: 20px ;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 2rem;
+}
+.footerIcons >a{
+    margin-left: 10px;
+    color:var(--white-color);
+    transition: all 0.3s;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.footerIcons a:hover{
+    color: var(--button-color);
+    font-size: 35px;
+}
+/* Footer Ends Here  */
 
 
 /*  Hero Section Responsive Starts */
@@ -202,7 +261,7 @@ a{
     #header{
         flex-wrap: wrap;
     }
-    .nav-menu ul{
+    .nav-menu li{
         flex-wrap: wrap;
     }
     .nav-menu ul li{
@@ -220,12 +279,13 @@ a{
         width: 100%;
         margin: 0 auto;
         margin-top: 20px;
-        text-align: center;
+        text-align: left;
 
     }
     .left-content>h1{
-        font-size: 2.25rem;
+        font-size: 1.5rem;
         padding-top: 10px;
+        
     }
     .right-image {
         margin-right: 0;
@@ -257,7 +317,7 @@ a{
 @media screen and (min-width:821px) and (max-width:1000px),  (max-width:1100px) {
     .left-content>h1{
         font-size: 1.8rem;
-        text-align: center;
+        text-align: left;
         width: auto;
     }
 }
@@ -282,3 +342,26 @@ a{
 
 /* Brand section Responsive starts End Here */
 /* Brand section Responsive starts here */
+
+/* Featured products at one place Section Starts Here  */
+@media screen and (max-width:576px), (min-width:577px) and (max-width:920px) {
+    .featured{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+    .rightContent{
+        margin: 20px 20px;
+        width: 500px;
+        margin-left: 0;
+    }
+}
+@media screen and (min-width:921px) and (max-width:1100px), (min-width:1101px) and (max-width:1400px) {
+    .leftImage {
+        
+        margin-left: -20px;
+    }
+    .rightContent {
+        margin-left: 20px;
+    }
+    
+}
