@@ -214,7 +214,12 @@ a{
     border-radius: 5px;
     margin: 5px;
     margin-top: 30px;
+    cursor: pointer;
+    transition: box-shadow .50s; 
 
+}
+.card:hover{
+    box-shadow: 10px 10px 10px 10px rgb(247, 246, 246);
 }
 .card img{
     margin-bottom: 15px;
