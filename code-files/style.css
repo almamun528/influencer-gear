@@ -193,6 +193,52 @@ a{
 }
 
 /* Cards Section starts ENDS */
+#cardSection{
+    margin: 60px auto;
+    width: 70%;
+}
+.carditems{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.card{
+    width: 330px;
+    border: 2px solid #d4dad4;
+    padding: 15px;
+    box-shadow: 10px 10px 10px 10px rgb(185 185 185);
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 30px;
+
+}
+.card img{
+    margin-bottom: 15px;
+}
+.card h5{
+    margin: 5px 0;
+}
+.card p{
+    margin: 10px 0;
+}
+.ratting i{
+    color: var(--orange-color);
+}
+.seemore-btn button{
+    color: var(--button-color);
+    text-align: right;
+    margin: 20px 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    width: 80%;
+    background-color:var(--white-color);
+}
+
 
 /* Featured products at one place Section Starts Here */
 
